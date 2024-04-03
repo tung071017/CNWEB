@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Exercise</title>
+    <style>
+        /* Đặt nền cho phần tử <body> là #bdc3c7*/
+            body {
+                background-color: #bdc3c7;
+            }
+            
+
+
+        /* Tạo phần tử <h1> #9b59b6*/
+            h1 {
+                color: #9b59b6;
+            }
+
+
+        /* Làm cho tất cả phần tử <h2> có màu cam */
+            h2 {
+                color: orange ;
+            }
+
+        /* Làm cho tất cả các phần tử <li> có màu xanh lam (chọn màu xanh thập lục phân của riêng bạn)*/
+            li {
+                color: rgb(97, 165, 165);
+            }
+
+        /*Đổi nền mỗi đoạn văn thành màu vàng*/
+            p {
+                background-color: yellow;
+            }
+
+
+        /*Làm cho tất cả các thẻ input có viền đỏ 3px*/
+        input {
+            border: 3px solid red;
+        }
+
+
+        /* Đặt mọi thứ có trong lớp 'hello' thành nền trắng*/
+        .hello {
+            background-color: white;
+        }
+
+        /* Cung cấp cho phần tử có id 'special' một đường viền màu xanh lam đặc 2px (chọn màu xanh rgb của riêng bạn)*/
+        #special {
+            border: 2px solid rgb(19, 34, 240);
+        }
+
+        /*Tạo tất cả các <p> được lồng bên trong phông chữ div 25px(font-size: 25px)*/
+        div p {
+            font-size: 25px;
+        }
+
+        /*Chỉ tạo các đầu vào có loại 'văn bản' có nền màu xám*/
+        input[type = "text"]{
+            background-color: gray;
+        }
+        input[type = "password"]{
+            background-color: gray;
+        }
+
+        /* Tạo nền màu hồng cho cả hai <p> bên trong <div> thứ 3*/
+        div:nth-child(3) p{
+            background-color: pink;
+        }
+
+        /* Tạo cho <p> thứ 2 bên trong <div> thứ 3 một viền trắng 5px*/
+        div:nth-child(3) p:nth-child(2) {
+            border: 5px solid white;
+        }
+
+        /* Tạo <em> trong phần tử <div> thứ 3 màu trắng và phông chữ 20px(font-size:20px)*/
+        div:nth-child(3) em {
+            color: white;
+            font-size: 20px;
+        }
+
+
+        /*THỬ THÁCH*/
+        /*Bạn có thể cần nghiên cứu một số bộ chọn và thuộc tính khác*/
+
+        /*Đặt tất cả các hộp kiểm "đã chọn" có lề trái là 50px(margin-left: 50px)*/
+
+
+        /* Làm cho các phần tử <label> hoàn toàn CHỮ HOA mà không thay đổi HTML (chắc chắn phải tra cứu phần này*/
+
+
+        /*Tạo chữ cái đầu tiên của phần tử có id 'đặc biệt' màu xanh lá cây và cỡ chữ 100px(font-size: 100)*/
+
+
+        /*Làm cho màu của phần tử <h1> chuyển sang màu xanh lam khi di chuột qua */
+
+
+        /*Tạo màu xám cho phần tử <a> đã được truy cập */
+    </style>
+</head>
+
+<body>
+    <h1>Selectors Exercise</h1>
+
+    <p>PARAGRAPH NOT INSIDE A DIV</p>
+
+    <div>
+        <p class="hello">I am a paragraph with a class</p>
+        <p id="special">I am a paragraph with an ID</p>
+
+        <h2>I am an awesome h2</h2>
+
+
+        <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin
+            iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland
+            wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's
+            trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO
+            normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue
+            Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health
+            goth asymmetrical freegan mixtape street art pour-over whatever.</p>
+
+    </div>
+
+    <div>
+        <h2>Things I need to do</h2>
+
+        <ul>
+            <li>Walk Dog <input type="checkbox" checked> </li>
+            <li>Feed Dog <input type="checkbox" checked> </li>
+            <li>Wash Dog <input type="checkbox"></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>I am another awesome h2</h2>
+
+        <p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies,
+            post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee
+            sustainable lo-fi vinyl Pinterest pork belly <em>cronut skateboard</em> 3 wolf moon. Normcore single-origin
+            coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual
+            Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale
+            chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
+
+        <p>I'm the second paragraph inside this div!</p>
+    </div>
+
+    <p>PARAGRAPH NOT INSIDE A DIV</p>
+
+
+    <div>
+        <h2>A less awesome h2</h2>
+
+        <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin
+            iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland
+            wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's
+            trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO
+            normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue
+            Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health
+            goth asymmetrical freegan mixtape street art pour-over whatever</p>
+
+        <p>One last paragraph here!</p>
+
+        <a href="https://www.facebook.com">I am a link to facebook</a>
+        <a href="https://www.facebook.com">I am another link to facebook</a>
+        <br>
+
+        <input type="text" name="name" /><label> Name</label><br />
+        <input type="password" name="password" /><label> Password</label><br />
+
+    </div>
+
+    <p>PARAGRAPH NOT INSIDE A DIV</p>
+
+</body>
+
+</html>
