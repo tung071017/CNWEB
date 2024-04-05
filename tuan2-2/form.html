@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Thanglong university form survey
+	</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+
+	<style>
+		/* Styling the Body element (Color - #060a52, wheat; Font "Open Sans", sans-serif; Alignment - center) */
+		body {
+			background-color: wheat;
+			font: sans-serif;
+			text-align: center;
+		}
+
+		/* Styling the form (Color, Padding, Shadow) */
+		form {
+			background-color: aliceblue;
+			padding: 20px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			background-color: white;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			font-size: 15px;
+			color:black;
+		}
+
+		/* Styling form-control input, select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+
+		}
+
+		/* Styling form-control Radio button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {}
+
+		/* Styling Button, color: wheat, border: #777 */
+		button {}
+	</style>
+</head>
+
+<body>
+	<img src="https://thanglong.edu.vn/themes/md_tlu_2/img/logo.svg" alt="">
+	<h1>Thanglong university form survey</h1>
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="name" placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email" id="email" placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text" id="age" placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you recommend Thanglong uni
+				to a friend?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio" id="recommed-1" name="recommed">Yes
+				</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio" id="recommed-2" name="recommed">No
+				</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio" id="recommed-3" name="recommed">Maybe
+				</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox">C
+				</input>
+			</label>
+			<label for="inp-2">
+				<input type="checkbox">C++
+				</input>
+			</label>
+			<label for="inp-3">
+				<input type="checkbox">C#
+				</input>
+			</label>
+			<label for="inp-4">
+				<input type="checkbox">Java
+				</input>
+			</label>
+			<label for="inp-5">
+				<input type="checkbox">Python
+				</input>
+			</label>
+			<label for="inp-6">
+				<input type="checkbox">JavaScript
+				</input>
+			</label>
+			<label for="inp-7">
+				<input type="checkbox">React
+				</input>
+			</label>
+			<label for="inp-7">
+				<input type="checkbox">Angular
+				</input>
+			</label>
+			<label for="inp-7">
+				<input type="checkbox">Django
+				</input>
+			</label>
+			<label for="inp-7">
+				<input type="checkbox">Spring
+				</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Some suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
