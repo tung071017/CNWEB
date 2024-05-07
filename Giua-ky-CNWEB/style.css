@@ -1,0 +1,15 @@
+.bgtop1{
+    background-color: black;
+    color: azure;
+}
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+}
+.container2{
+    width: 1200px;
+    margin: 0 auto;
+}
+section{
+    margin: 50px auto;
+}
